@@ -1,0 +1,6 @@
+<!-- camera.component.html -->
+
+<div>
+  <button (click)="startCamera()">Iniciar Cámara</button>
+  <video *ngIf="cameraStream" [srcObject]="cameraStream" autoplay></video>
+</div>
